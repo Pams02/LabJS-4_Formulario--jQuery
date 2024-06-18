@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Completo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="val.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="val.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de registro</h1>
+        <form id="miFormulario">
+            <!-- Campo de nombre -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <span class="error" id="lastnameError"></span>
+                </div>
+            </div>
+            
+            <!-- Campo de Correo Electrónico -->
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <!-- Campo de Fecha de nacimiento -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                    <span class="error" id="fechaError"></span>
+                </div>
+                <!-- Campo de Género -->
+                <div class="form-group col-md-6">
+                    <label>Género:</label>
+                    <label><input type="radio" id="generoM" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" id="generoF" name="genero" value="femenino"> Femenino</label>
+                    <span class="error" id="generoError"></span>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
